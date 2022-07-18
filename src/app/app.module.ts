@@ -32,9 +32,11 @@ const routes: Routes = [
     CartStatusComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+}),
     NgbModule
   ],
   providers: [ProductService],

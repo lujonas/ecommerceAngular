@@ -10,8 +10,10 @@ import { ProductCategory } from '../common/product-category';
 })
 export class ProductService {
 
-  private baseUrl='http://172.30.118.54:8080/api/products';
-  private categoryUrl= 'http://172.30.118.54:8080/api/product-category';
+  //private baseUrl='https://ecommerce-spring-ludojo-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/products';
+  //private categoryUrl= 'https://ecommerce-spring-ludojo-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/product-category';
+  private baseUrl='http://localhost:8080/api/products';
+  private categoryUrl= 'http://localhost:8080/api/product-category';
 
 
   constructor(private httpClient: HttpClient) { }
